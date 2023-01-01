@@ -1,0 +1,3 @@
+orderTotal=$20.94
+orderTotal=$20.94
+orderTotal=$27.92

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eatatjoes.EatAtJoesController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="60.0" vgrow="SOMETIMES" />
+        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+    <Label text="Quantity" GridPane.halignment="CENTER" />
+    <Label layoutX="10.0" layoutY="10.0" text="Description" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+    <Label layoutX="79.0" layoutY="10.0" text="Unit Price" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+    <Label layoutX="160.0" layoutY="10.0" text="Extended Price" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+    <Spinner fx:id="spinQty1" onMouseClicked="#onMouseClicked" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory max="10" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Label text="Hamburger" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+    <Label fx:id="lblUnitPrice1" text="\$3.99" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+    <Label fx:id="lblExtendedPrice1" text="\$0.00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+
+    <Spinner fx:id="spinQty2" onMouseClicked="#onMouseClicked" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory max="10" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Label text="Cheeseburger" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+    <Label fx:id="lblUnitPrice2" text="\$4.99" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+    <Label fx:id="lblExtendedPrice2" text="\$0.00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+
+    <Spinner fx:id="spinQty3" onMouseClicked="#onMouseClicked" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory max="10" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Label text="Fries" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <Label fx:id="lblUnitPrice3" text="\$2.99" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+    <Label fx:id="lblExtendedPrice3" text="\$0.00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+
+    <Spinner fx:id="spinQty4" onMouseClicked="#onMouseClicked" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory max="10" min="0" />
+        </valueFactory>
+    </Spinner>
+    <Label text="Soda" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+    <Label fx:id="lblUnitPrice4" text="\$1.99" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+    <Label fx:id="lblExtendedPrice4" text="\$0.00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+
+    <Label text="Total" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+    <Label fx:id="lblTotalPrice" text="\$0.00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+   <Button mnemonicParsing="false" onAction="#btnOrderClicked" text="Order" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+
+</GridPane>
